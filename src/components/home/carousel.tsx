@@ -25,7 +25,7 @@ export default function Carousel() {
                     slideShadows: true
                 }}
                 pagination={{ el: '.swiper-pagination', clickable: true }}
-                autoplay={{ delay: 300, disableOnInteraction: false }}
+                autoplay={{ delay: 3000 }}
                 modules={[EffectCoverflow, Pagination, Navigation]}
                 className="swiper-container">
 

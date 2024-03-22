@@ -10,7 +10,7 @@ export default function Trip() {
                 </div>
             </div>
 
-            <div  className="trip h-auto mt-5 py-12">
+            <div  className="trip h-auto mt-5 py-12 items-center">
                 <Carousel />
             </div>
         </section>

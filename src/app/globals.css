@@ -65,8 +65,8 @@ header svg {
 }
 
 .collection .content {
-  height: 30rem;
-  width: 25rem;
+  /* height: 30rem;
+  width: 25rem; */
   background-color: #1b1f2a;
   border: .2rem solid rgba(255, 255, 255, .1);
   border-radius: .7rem;
