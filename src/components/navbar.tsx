@@ -21,8 +21,8 @@ const Navbar = () => {
 
                 <nav className={`hidden md:flex gap-3 text-2xl tracking-tighter ${isMenuOpen ? 'flex' : 'hidden'}`}>
                     <Link href={'/about'} className='hover:text-primary ease-in duration-300'>About us</Link>
-                    <Link href={'/servis'} className='hover:text-primary ease-in duration-300'>Services</Link>
-                    <Link href={'/teams'} className='hover:text-primary ease-in duration-300'>Teams</Link>
+                    <Link href={'/service'} className='hover:text-primary ease-in duration-300'>Services</Link>
+                    <Link href={'/team'} className='hover:text-primary ease-in duration-300'>Teams</Link>
                 </nav>
 
                 <button onClick={toggleMenu} aria-label='togle' id='togle' className='md:hidden'>
@@ -41,8 +41,8 @@ const Navbar = () => {
             {/* Menu for mobile */}
             <nav className={`md:hidden flex flex-col gap-3 text-2xl tracking-tighter pt-2 ${isMenuOpen ? 'flex' : 'hidden'} items-center pt-2`}>
                 <Link href={'/about'} className='hover:text-primary ease-in duration-300'>About us</Link>
-                <Link href={'/servis'} className='hover:text-primary ease-in duration-300'>Services</Link>
-                <Link href={'/teams'} className='hover:text-primary ease-in duration-300'>Teams</Link>
+                <Link href={'/service'} className='hover:text-primary ease-in duration-300'>Services</Link>
+                <Link href={'/team'} className='hover:text-primary ease-in duration-300'>Teams</Link>
             </nav>
         </header>
 
