@@ -15,7 +15,7 @@ export const Cards: React.FC<ICard> = ({image, title, text, alt}) => {
         <div className="text-content max-md:mt-12">
             <span className="">{title}</span>
             <p>{text}</p>
-            <Link href={'/servis'} className="btn mb-8 text-white">Read More</Link>
+            <Link href={'/service'} className="btn mb-8 text-white">Read More</Link>
         </div>
     </div>
 
