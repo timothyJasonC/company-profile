@@ -11,7 +11,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className="bg-black bg-opacity-90 w-full py-4 px-12 md:px-24 text-white fixed z-40">
+        <header className="bg-black bg-opacity-90 w-full py-4 px-12 md:px-24 text-white fixed z-40 min-w-[600px]">
             <div className="flex items-center justify-between">
 
                 <Link href={'/'} className="flex text-end text-4xl items-center font-bold text-white -space-x-2">
