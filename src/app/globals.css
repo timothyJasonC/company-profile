@@ -2,32 +2,108 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2 {
+  font-family: serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+header svg {
+  height: 2rem;
+  rotate: 270deg;
+  fill: #fff;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.wrapper {
+  background-image: url('../../public/mountains2.jpg');
+  background-size: 100% auto cover;
+  background-position: center;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.white-overlay {
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.ov-cont {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.container2{
+  flex: 1 1 30rem;
+}
+.container {
+  flex: 1 1 30rem;
+  border: .2rem solid rgba(255, 255, 255, .1);
+  border-radius: .7rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .3),
+    0 0 1rem rgba(0, 0, 0, .3),
+    0 0 2rem rgba(0, 0, 0, .3);
+}
+
+.trip {
+  background-image: url('../../public/trip.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* carousel */
+.wrapper2{
+  background-color: #1e232e;
+}
+.collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection .content {
+  height: 30rem;
+  width: 25rem;
+  background-color: #1b1f2a;
+  border: .2rem solid rgba(255, 255, 255, .1);
+  border-radius: .7rem;
+  border-bottom: .4rem solid #943B00;
+  border-top: .4rem solid #943B00;
+  overflow: hidden;
+}
+
+.collection img {
+  width: 100%;
+  border-bottom-left-radius: .6rem;
+  border-bottom-right-radius: .6rem;
+}
+
+.text-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-content span{
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.text-content p{
+  max-width: 22rem;
+  font-size: .8rem;
+  font-weight: 400;
+  text-align: center;
+}
+.btn{
+  background-color: #943B00;
+  padding: .2rem;
+  border: 2px solid #943B00;
+  outline: none;
+  font-size: .8rem;
+  border-radius: .5rem;
+  margin: 1rem 0;
+  cursor: pointer;
 }
