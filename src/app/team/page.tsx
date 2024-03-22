@@ -30,7 +30,7 @@ export default function Page() {
         </div>
     );
     return (
-        <div className="pt-[6rem] pb-12 bg-white text-black w-full px-4">
+        <div className="pt-[6rem] pb-12 bg-white text-black w-full mx-auto px-4">
             <p className="text-center text-5xl text-primary font-bold">Meet Our Team</p>
             <div className="flex flex-wrap items-center justify-center  container2 gap-4 my-12 px-4">
                 {loading ? (
