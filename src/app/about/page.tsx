@@ -3,7 +3,7 @@ import Info from "@/components/about/info";
 
 export default function Page() {
     return(
-        <div className="text-black bg-white min-w-[500px]">
+        <div className="text-black bg-white min-w-[375px]">
         <Info />
         <Contact/>
     </div>

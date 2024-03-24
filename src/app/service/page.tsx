@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Page() {
     return (
-        <div className="pt-[6rem] pb-12 bg-white w-full px-4 min-w-[500px]">
+        <div className="pt-[6rem] pb-12 bg-white w-full px-4 min-w-[375px]">
             <p className="text-center text-5xl text-primary font-bold">Our Services</p>
             <div className="w-[80%] mx-auto pt-12 flex flex-col gap-8 justify-center">
 
