@@ -11,15 +11,15 @@ const Navbar = () => {
     };
 
     return (
-        <header className="bg-black bg-opacity-90 w-full py-4 px-12 md:px-24 text-white fixed z-40 min-w-[400px]">
+        <header className="bg-black bg-opacity-90 w-full py-4 max-sm:py-2 px-12 max-sm:px-2 md:px-24 text-white fixed z-40">
             <div className="flex items-center justify-between">
 
-                <Link href={'/'} className="flex text-end text-4xl items-center font-bold text-white -space-x-2">
-                    <Image src={'/nuartha.png'} alt="" width={50} height={50} />
-                    <span>nuartha</span>
+                <Link href={'/'} className="flex text-end text-4xl items-center font-bold text-white sm:-space-x-2">
+                    <Image src={'/nuartha.png'} alt="" width={50} height={50} className='max-sm:w-6'/>
+                    <span className='max-sm:text-xl'>nuartha</span>
                 </Link>
 
-                <nav className={`hidden md:flex gap-3 text-2xl tracking-tighter ${isMenuOpen ? 'flex' : 'hidden'}`}>
+                <nav className={`hidden md:flex gap-3 text-2xl tracking-tighter max-sm:text-sm ${isMenuOpen ? 'flex' : 'hidden'}`}>
                     <Link href={'/about'} className='hover:text-primary ease-in duration-300'>About us</Link>
                     <Link href={'/service'} className='hover:text-primary ease-in duration-300'>Services</Link>
                     <Link href={'/team'} className='hover:text-primary ease-in duration-300'>Teams</Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
 
             </div>
             {/* Menu for mobile */}
-            <nav className={`md:hidden flex flex-col gap-3 text-2xl tracking-tighter pt-2 ${isMenuOpen ? 'flex' : 'hidden'} items-center pt-2`}>
+            <nav className={`md:hidden flex flex-col gap-3 text-2xl tracking-tighter pt-2 max-sm:text-sm ${isMenuOpen ? 'flex' : 'hidden'} items-center pt-2`}>
                 <Link href={'/about'} className='hover:text-primary ease-in duration-300'>About us</Link>
                 <Link href={'/service'} className='hover:text-primary ease-in duration-300'>Services</Link>
                 <Link href={'/team'} className='hover:text-primary ease-in duration-300'>Teams</Link>

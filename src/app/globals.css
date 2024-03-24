@@ -37,7 +37,7 @@ header svg {
   flex: 1 1 30rem;
 }
 .container {
-  flex: 1 1 30rem;
+  flex: 1 1 20rem;
   border: .2rem solid rgba(255, 255, 255, .1);
   border-radius: .7rem;
   text-align: center;
@@ -65,8 +65,6 @@ header svg {
 }
 
 .collection .content {
-  /* height: 30rem;
-  width: 25rem; */
   background-color: #1b1f2a;
   border: .2rem solid rgba(255, 255, 255, .1);
   border-radius: .7rem;
@@ -88,21 +86,17 @@ header svg {
   flex-direction: column;
 }
 .text-content span{
-  font-size: 1.7rem;
   font-weight: 500;
 }
 .text-content p{
   max-width: 22rem;
-  font-size: .8rem;
   font-weight: 400;
   text-align: center;
 }
 .btn{
   background-color: #943B00;
-  padding: .2rem;
   border: 2px solid #943B00;
   outline: none;
-  font-size: .8rem;
   border-radius: .5rem;
   margin: 1rem 0;
   cursor: pointer;

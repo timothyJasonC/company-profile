@@ -5,7 +5,7 @@ import Trip from "@/components/home/Trip";
 
 export default function Home() {
   return (
-    <div className="min-w-[500px]">
+    <div className="min-w-[375px]">
     <Hero />
     <Overview />
     <Trip />
